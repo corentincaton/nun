@@ -11,3 +11,97 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  --app-border-width: 2px;
+  --app-border: var(--app-border-width) solid white;
+  --app-min-height: 600px;
+  background-color: black;
+  color: white;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  margin: 0px;
+}
+
+.Navbar {
+  background-color: black;
+  float: left;
+  writing-mode: tb;
+  writing-mode: tb-rl;
+  writing-mode: vertical-lr;
+  writing-mode: sideways-lr;
+  transform: scale(-1);
+  padding: 0px 25px;
+  height: 100vh;
+  min-height: var(--app-min-height);
+  text-align: end;
+  border-left: var(--app-border);
+}
+
+.Navbar img {
+  width: 30px;
+  padding: 40px 0px 30px;
+
+}
+
+.Navbar p {
+  display: inline-block;
+  padding-top: 40px;
+}
+
+.Navbar .description {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+}
+.Main .row {
+  display: flex;
+}
+.Main .row:not(:last-child) {
+  border-bottom: var(--app-border);
+}
+.Main .row-1 { 
+  height: calc(25vh - var(--app-border-width));
+  min-height: calc(0.25 * var(--app-min-height) - var(--app-border-width));
+}
+.Main .row-2 { 
+  height: calc(18vh - var(--app-border-width));
+  min-height: calc(0.18 * var(--app-min-height) - var(--app-border-width));
+}
+.Main .row-3 { 
+  height: calc(30vh - var(--app-border-width));
+  min-height: calc(0.30 * var(--app-min-height) - var(--app-border-width));
+}
+.Main .row-4 { 
+  height: calc(27vh);
+  min-height: calc(0.27 * var(--app-min-height));
+}
+.Main .row-item { 
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+.Main .row-1 .row-item-1 { 
+  width: 25%;
+  border-right: var(--app-border);
+}
+.Main .row-1 .row-item-2 { 
+  width: 20%;
+  border-right: var(--app-border);
+}
+
+
