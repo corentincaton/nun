@@ -15,8 +15,8 @@ code {
 .App {
   --app-border-width: 2px;
   --app-border: var(--app-border-width) solid white;
-  --app-min-height: 600px;
-  background-color: black;
+  --app-min-height: 500px;
+  background-color: #141414;
   color: white;
 }
 
@@ -32,24 +32,21 @@ button {
 }
 
 .Navbar {
-  background-color: black;
+  background-color: #141414;
   float: left;
   writing-mode: tb;
   writing-mode: tb-rl;
   writing-mode: vertical-lr;
-  writing-mode: sideways-lr;
   transform: scale(-1);
-  padding: 0px 25px;
-  height: 100vh;
+  padding: 0px min(7%, 25px);
+  height: 100%;
   min-height: var(--app-min-height);
   text-align: end;
-  border-left: var(--app-border);
 }
 
 .Navbar img {
   width: 30px;
   padding: 40px 0px 30px;
-
 }
 
 .Navbar p {
@@ -65,43 +62,172 @@ button {
 .Main {
   display: flex;
   flex-direction: column;
+  border-left: var(--app-border);
 }
+
 .Main .row {
   display: flex;
 }
+
 .Main .row:not(:last-child) {
   border-bottom: var(--app-border);
 }
-.Main .row-1 { 
-  height: calc(25vh - var(--app-border-width));
-  min-height: calc(0.25 * var(--app-min-height) - var(--app-border-width));
+
+.Main .row-1 {
+  height: calc(28vh - var(--app-border-width));
+  min-height: calc(0.28 * var(--app-min-height) - var(--app-border-width));
 }
-.Main .row-2 { 
-  height: calc(18vh - var(--app-border-width));
-  min-height: calc(0.18 * var(--app-min-height) - var(--app-border-width));
+
+.Main .row-2 {
+  height: calc(22vh - var(--app-border-width));
+  min-height: calc(0.22 * var(--app-min-height) - var(--app-border-width));
 }
-.Main .row-3 { 
-  height: calc(30vh - var(--app-border-width));
-  min-height: calc(0.30 * var(--app-min-height) - var(--app-border-width));
+
+.Main .row-3 {
+  height: calc(32vh - var(--app-border-width));
+  min-height: calc(0.32 * var(--app-min-height) - var(--app-border-width));
 }
-.Main .row-4 { 
-  height: calc(27vh);
-  min-height: calc(0.27 * var(--app-min-height));
+
+.Main .row-4 {
+  height: calc(18vh);
+  min-height: calc(0.18 * var(--app-min-height));
 }
-.Main .row-item { 
+
+.Main .row-item {
   cursor: pointer;
   font-size: 20px;
-  padding: 15px;
   display: flex;
   align-items: flex-end;
 }
-.Main .row-1 .row-item-1 { 
+
+.Main .row-item-container {
+  padding: 15px;
+}
+
+.Main .row-item:not(:last-child) {
+  border-right: var(--app-border);
+}
+
+.Main .row-1 .row-item-1 {
+  width: calc(25% - 2px);
+}
+
+.Main .row-1 .row-item-2 {
+  width: calc(20% - 2px);
+}
+
+.Main .row-2 .row-item-1 {
+  width: calc(45% - 2px);
+}
+
+.Main .row-2 .row-item-2 {
+  width: calc(30% - 2px);
+}
+
+.Main .row-3 .row-item-1 {
+  width: calc(25% - 2px);
+}
+
+.Main .row-3 .row-item-2 {
+  width: calc(35% - 2px);
+}
+
+.Main .row-3 .row-item-3 {
+  width: calc(15% - 2px);
+}
+
+.Main .row-3 .row-item-4 {
   width: 25%;
-  border-right: var(--app-border);
-}
-.Main .row-1 .row-item-2 { 
-  width: 20%;
-  border-right: var(--app-border);
 }
 
+.Main .row-4 .row-item-1 {
+  width: calc(35% - 2px);
+}
 
+.Main .row-4 .row-item-2 {
+  width: calc(25% - 2px);
+}
+
+.Main .row-4 .row-item-3 {
+  width: calc(15% - 2px);
+}
+
+.Main .row-1 .row-item-3,
+.Main .row-2 .row-item-1,
+.Main .row-2 .row-item-3,
+.Main .row-3 .row-item-1,
+.Main .row-3 .row-item-3,
+.Main .row-4 .row-item-2,
+.Main .row-4 .row-item-4 {
+  cursor: default;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 769px) {
+  .Navbar img {
+    width: 25px;
+  }
+  .Main .row {
+    flex-direction: column;
+    height: auto;
+    min-height: 0px;
+  }
+
+  .Main .row:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .Main .row .row-item {
+    border-right: none;
+    border-right: none;
+    border-bottom: var(--app-border);
+    width: 100%;
+  }
+
+  .Main .row-1 .row-item-3,
+  .Main .row-2 .row-item-1,
+  .Main .row-2 .row-item-3,
+  .Main .row-3 .row-item-1,
+  .Main .row-3 .row-item-3,
+  .Main .row-4 .row-item-2,
+  .Main .row-4 .row-item-4 {
+    display: none;
+  }
+
+  .Main .row-1 .row-item-1 { 
+    height: 15vh;
+    min-height: 100px;
+  }
+
+  .Main .row-1 .row-item-2 { 
+    height: 20vh;
+    min-height: 125px;
+  }
+
+  .Main .row-2 .row-item-2 {
+    height: 10vh;
+    min-height: 65px;
+  }
+
+  .Main .row-3 .row-item-2 { 
+    height: 25vh;
+    min-height: 150px;
+  }
+
+  .Main .row-3 .row-item-4 { 
+    height: 20vh;
+    min-height: 125px;
+  }
+
+  .Main .row-4 .row-item-1 { 
+    height: 12vh;
+    min-height: 75px;
+  }
+
+  .Main .row-4 .row-item-3 { 
+    height: 18vh;
+    min-height: 115px;
+    border-bottom: none;
+  }
+
+}
