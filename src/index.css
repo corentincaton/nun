@@ -171,6 +171,7 @@ button {
     flex-direction: column;
     height: auto;
     min-height: 0px;
+    background-color: white;
   }
 
   .Main .row:not(:last-child) {
@@ -178,10 +179,20 @@ button {
   }
 
   .Main .row .row-item {
+    position: relative;
     border-right: none;
-    border-right: none;
-    border-bottom: var(--app-border);
-    width: 100%;
+    background-color: #141414;
+    margin-bottom: 2px;
+    width: calc(100% - 30px);
+  }
+
+  .Main .row .row-item-border {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2px;
+    height: 100%;
+    background: white;
   }
 
   .Main .row-1 .row-item-3,
@@ -197,37 +208,105 @@ button {
   .Main .row-1 .row-item-1 { 
     height: 15vh;
     min-height: 100px;
+    border-right: 30px solid #ECA88A;
   }
 
   .Main .row-1 .row-item-2 { 
     height: 20vh;
     min-height: 125px;
+    border-right: 30px solid #C0877C;
   }
 
   .Main .row-2 .row-item-2 {
     height: 10vh;
     min-height: 65px;
+    border-right: 30px solid #7C3930;
   }
 
   .Main .row-3 .row-item-2 { 
     height: 25vh;
     min-height: 150px;
+    border-right: 30px solid #FC7065;
   }
 
   .Main .row-3 .row-item-4 { 
     height: 20vh;
     min-height: 125px;
+    border-right: 30px solid #E96879;
   }
 
   .Main .row-4 .row-item-1 { 
     height: 12vh;
     min-height: 75px;
+    border-right: 30px solid #F5A29E;
   }
 
   .Main .row-4 .row-item-3 { 
     height: 18vh;
     min-height: 115px;
-    border-bottom: none;
+    border-right: 30px solid #C8A680;
+    margin-bottom: 0px;
+  }
+}
+
+@media (hover: hover) {
+  .Main .row-1 .row-item-1:hover { 
+    background-color: #ECA88A;
+  }
+
+  .Main .row-1 .row-item-2:hover { 
+    background-color: #C0877C;
+  }
+
+  .Main .row-2 .row-item-2:hover {
+    background-color: #7C3930;
+  }
+
+  .Main .row-3 .row-item-2:hover { 
+    background-color: #FC7065;
+  }
+
+  .Main .row-3 .row-item-4:hover { 
+    background-color: #E96879;
+  }
+
+  .Main .row-4 .row-item-1:hover { 
+    background-color: #F5A29E;
+  }
+
+  .Main .row-4 .row-item-3:hover { 
+    background-color: #C8A680;
+  }
+}
+
+@media (hover: none) {
+  .Main .row-1 .row-item-1:hover { 
+    
+  }
+
+  .Main .row-1 .row-item-2:hover { 
+    
+  }
+
+  .Main .row-2 .row-item-2:hover {
+    
+  }
+
+  .Main .row-3 .row-item-2:hover { 
+    
+  }
+
+  .Main .row-3 .row-item-4:hover { 
+    
+  }
+
+  .Main .row-4 .row-item-1:hover { 
+    
+  }
+
+  .Main .row-4 .row-item-3:hover { 
+    
   }
 
 }
+
