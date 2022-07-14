@@ -31,6 +31,11 @@ button {
   margin: 0px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .Navbar {
   background-color: #141414;
   float: left;
@@ -59,106 +64,106 @@ button {
   text-transform: uppercase;
 }
 
-.Main {
+.Home {
   display: flex;
   flex-direction: column;
   border-left: var(--app-border);
 }
 
-.Main .row {
+.Home .row {
   display: flex;
 }
 
-.Main .row:not(:last-child) {
+.Home .row:not(:last-child) {
   border-bottom: var(--app-border);
 }
 
-.Main .row-1 {
+.Home .row-1 {
   height: calc(28vh - var(--app-border-width));
   min-height: calc(0.28 * var(--app-min-height) - var(--app-border-width));
 }
 
-.Main .row-2 {
+.Home .row-2 {
   height: calc(22vh - var(--app-border-width));
   min-height: calc(0.22 * var(--app-min-height) - var(--app-border-width));
 }
 
-.Main .row-3 {
+.Home .row-3 {
   height: calc(32vh - var(--app-border-width));
   min-height: calc(0.32 * var(--app-min-height) - var(--app-border-width));
 }
 
-.Main .row-4 {
+.Home .row-4 {
   height: calc(18vh);
   min-height: calc(0.18 * var(--app-min-height));
 }
 
-.Main .row-item {
+.Home .row-item {
   cursor: pointer;
   font-size: 20px;
   display: flex;
   align-items: flex-end;
 }
 
-.Main .row-item-container {
+.Home .row-item-container {
   padding: 15px;
 }
 
-.Main .row-item:not(:last-child) {
+.Home .row-item:not(:last-child) {
   border-right: var(--app-border);
 }
 
-.Main .row-1 .row-item-1 {
+.Home .row-1 .row-item-1 {
   width: calc(25% - 2px);
 }
 
-.Main .row-1 .row-item-2 {
+.Home .row-1 .row-item-2 {
   width: calc(20% - 2px);
 }
 
-.Main .row-2 .row-item-1 {
+.Home .row-2 .row-item-1 {
   width: calc(45% - 2px);
 }
 
-.Main .row-2 .row-item-2 {
+.Home .row-2 .row-item-2 {
   width: calc(30% - 2px);
 }
 
-.Main .row-3 .row-item-1 {
+.Home .row-3 .row-item-1 {
   width: calc(25% - 2px);
 }
 
-.Main .row-3 .row-item-2 {
+.Home .row-3 .row-item-2 {
   width: calc(35% - 2px);
 }
 
-.Main .row-3 .row-item-3 {
+.Home .row-3 .row-item-3 {
   width: calc(15% - 2px);
 }
 
-.Main .row-3 .row-item-4 {
+.Home .row-3 .row-item-4 {
   width: 25%;
 }
 
-.Main .row-4 .row-item-1 {
+.Home .row-4 .row-item-1 {
   width: calc(35% - 2px);
 }
 
-.Main .row-4 .row-item-2 {
+.Home .row-4 .row-item-2 {
   width: calc(25% - 2px);
 }
 
-.Main .row-4 .row-item-3 {
+.Home .row-4 .row-item-3 {
   width: calc(15% - 2px);
 }
 
-.Main .row-1 .row-item-3,
-.Main .row-2 .row-item-1,
-.Main .row-2 .row-item-3,
-.Main .row-3 .row-item-1,
-.Main .row-3 .row-item-3,
-.Main .row-4 .row-item-2,
-.Main .row-4 .row-item-4 {
+.Home .row-1 .row-item-3,
+.Home .row-2 .row-item-1,
+.Home .row-2 .row-item-3,
+.Home .row-3 .row-item-1,
+.Home .row-3 .row-item-3,
+.Home .row-4 .row-item-2,
+.Home .row-4 .row-item-4 {
   cursor: default;
   pointer-events: none;
 }
@@ -167,18 +172,18 @@ button {
   .Navbar img {
     width: 25px;
   }
-  .Main .row {
+  .Home .row {
     flex-direction: column;
     height: auto;
     min-height: 0px;
     background-color: white;
   }
 
-  .Main .row:not(:last-child) {
+  .Home .row:not(:last-child) {
     border-bottom: none;
   }
 
-  .Main .row .row-item {
+  .Home .row .row-item {
     position: relative;
     border-right: none;
     background-color: #141414;
@@ -186,7 +191,7 @@ button {
     width: calc(100% - 30px);
   }
 
-  .Main .row .row-item-border {
+  .Home .row .row-item-border {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -195,53 +200,53 @@ button {
     background: white;
   }
 
-  .Main .row-1 .row-item-3,
-  .Main .row-2 .row-item-1,
-  .Main .row-2 .row-item-3,
-  .Main .row-3 .row-item-1,
-  .Main .row-3 .row-item-3,
-  .Main .row-4 .row-item-2,
-  .Main .row-4 .row-item-4 {
+  .Home .row-1 .row-item-3,
+  .Home .row-2 .row-item-1,
+  .Home .row-2 .row-item-3,
+  .Home .row-3 .row-item-1,
+  .Home .row-3 .row-item-3,
+  .Home .row-4 .row-item-2,
+  .Home .row-4 .row-item-4 {
     display: none;
   }
 
-  .Main .row-1 .row-item-1 { 
+  .Home .row-1 .row-item-1 { 
     height: 15vh;
     min-height: 100px;
     border-right: 30px solid #ECA88A;
   }
 
-  .Main .row-1 .row-item-2 { 
+  .Home .row-1 .row-item-2 { 
     height: 20vh;
     min-height: 125px;
     border-right: 30px solid #C0877C;
   }
 
-  .Main .row-2 .row-item-2 {
+  .Home .row-2 .row-item-2 {
     height: 10vh;
     min-height: 65px;
     border-right: 30px solid #7C3930;
   }
 
-  .Main .row-3 .row-item-2 { 
+  .Home .row-3 .row-item-2 { 
     height: 25vh;
     min-height: 150px;
     border-right: 30px solid #FC7065;
   }
 
-  .Main .row-3 .row-item-4 { 
+  .Home .row-3 .row-item-4 { 
     height: 20vh;
     min-height: 125px;
     border-right: 30px solid #E96879;
   }
 
-  .Main .row-4 .row-item-1 { 
+  .Home .row-4 .row-item-1 { 
     height: 12vh;
     min-height: 75px;
     border-right: 30px solid #F5A29E;
   }
 
-  .Main .row-4 .row-item-3 { 
+  .Home .row-4 .row-item-3 { 
     height: 18vh;
     min-height: 115px;
     border-right: 30px solid #C8A680;
@@ -250,61 +255,61 @@ button {
 }
 
 @media (hover: hover) {
-  .Main .row-1 .row-item-1:hover { 
+  .Home .row-1 .row-item-1:hover { 
     background-color: #ECA88A;
   }
 
-  .Main .row-1 .row-item-2:hover { 
+  .Home .row-1 .row-item-2:hover { 
     background-color: #C0877C;
   }
 
-  .Main .row-2 .row-item-2:hover {
+  .Home .row-2 .row-item-2:hover {
     background-color: #7C3930;
   }
 
-  .Main .row-3 .row-item-2:hover { 
+  .Home .row-3 .row-item-2:hover { 
     background-color: #FC7065;
   }
 
-  .Main .row-3 .row-item-4:hover { 
+  .Home .row-3 .row-item-4:hover { 
     background-color: #E96879;
   }
 
-  .Main .row-4 .row-item-1:hover { 
+  .Home .row-4 .row-item-1:hover { 
     background-color: #F5A29E;
   }
 
-  .Main .row-4 .row-item-3:hover { 
+  .Home .row-4 .row-item-3:hover { 
     background-color: #C8A680;
   }
 }
 
 @media (hover: none) {
-  .Main .row-1 .row-item-1:hover { 
+  .Home .row-1 .row-item-1:hover { 
     
   }
 
-  .Main .row-1 .row-item-2:hover { 
+  .Home .row-1 .row-item-2:hover { 
     
   }
 
-  .Main .row-2 .row-item-2:hover {
+  .Home .row-2 .row-item-2:hover {
     
   }
 
-  .Main .row-3 .row-item-2:hover { 
+  .Home .row-3 .row-item-2:hover { 
     
   }
 
-  .Main .row-3 .row-item-4:hover { 
+  .Home .row-3 .row-item-4:hover { 
     
   }
 
-  .Main .row-4 .row-item-1:hover { 
+  .Home .row-4 .row-item-1:hover { 
     
   }
 
-  .Main .row-4 .row-item-3:hover { 
+  .Home .row-4 .row-item-3:hover { 
     
   }
 

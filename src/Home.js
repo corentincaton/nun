@@ -1,30 +1,30 @@
 import ItemsRow from "./ItemsRow";
 
-function Main() {
+function Home() {
 
     let firstRowItems = [
-        {name: "Chef privé", link: "PrivateChef", id:1},
-        {name: "Consulting", link: "Consulting", id:2},
+        {name: "Chef privé", link: "private-chef", id:1},
+        {name: "Consulting", link: "consulting", id:2},
         {name: "", link: "", width: "", id:3}
     ];
 
     let secondRowItems = [
         {name: "", link: "", id:1},
-        {name: "Pop-ups", link: "PopUps", id:2},
+        {name: "Pop-ups", link: "pop-ups", id:2},
         {name: "", link: "", id:3}
     ];
 
     let thirdRowItems = [
         {name: "", link: "", id:1},
-        {name: "Le menu du mois", link: "Menu", id:2},
+        {name: "Le menu du mois", link: "menu", id:2},
         {name: "", link: "", id:3},
-        {name: "À propos", link: "About", id:4},
+        {name: "À propos", link: "about", id:4},
     ];
 
     let fourthRowItems = [
-        {name: "Les alliés", link: "Partners", id:1},
+        {name: "Les alliés", link: "partners", id:1},
         {name: "", link: "", id:2},
-        {name: "Contact", link: "Contact", id:3},
+        {name: "Contact", link: "contact", id:3},
         {name: "", link: "", id:4},
     ];
 
@@ -33,7 +33,7 @@ function Main() {
     }
 
     return (  
-        <div className="Main">
+        <div className="Home">
             <ItemsRow row={1} items={firstRowItems} handleClick={handleClick} />
             <ItemsRow row={2} items={secondRowItems} handleClick={handleClick} />
             <ItemsRow row={3} items={thirdRowItems} handleClick={handleClick} />
@@ -42,4 +42,4 @@ function Main() {
     );
 }
  
-export default Main;
+export default Home;
