@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-const ItemsRow = ({row, items, handleClick}) => {
+const ItemsRow = ({row, items}) => {
     return ( 
         <div className={"row row-" + row}>
             {items.map((item) => (

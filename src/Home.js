@@ -28,16 +28,12 @@ function Home() {
         {name: "", link: "", id:4},
     ];
 
-    function handleClick(param) {
-        console.log(param);
-    }
-
     return (  
         <div className="Home">
-            <ItemsRow row={1} items={firstRowItems} handleClick={handleClick} />
-            <ItemsRow row={2} items={secondRowItems} handleClick={handleClick} />
-            <ItemsRow row={3} items={thirdRowItems} handleClick={handleClick} />
-            <ItemsRow row={4} items={fourthRowItems} handleClick={handleClick} />
+            <ItemsRow row={1} items={firstRowItems} />
+            <ItemsRow row={2} items={secondRowItems} />
+            <ItemsRow row={3} items={thirdRowItems} />
+            <ItemsRow row={4} items={fourthRowItems} />
         </div>
     );
 }

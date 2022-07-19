@@ -19,6 +19,13 @@ code {
   background-color: #141414;
   color: white;
 }
+.Main {
+  margin-left: 80px;
+  border-left: var(--app-border);
+}
+.Main>*:not(.Home) {
+  padding-bottom: 40px;
+}
 
 p,
 a,
@@ -67,7 +74,6 @@ a {
 .Home {
   display: flex;
   flex-direction: column;
-  border-left: var(--app-border);
 }
 
 .Home .row {
@@ -168,7 +174,36 @@ a {
   pointer-events: none;
 }
 
+.Header {
+  padding: 100px 25px 25px;
+  border-bottom: var(--app-border);
+}
+.Header h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.Paragraph {
+  padding: 80px 25px 25px;
+  border-bottom: var(--app-border);
+}
+.Paragraph p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.Picture {
+  font-size: 0px;
+  border-bottom: var(--app-border);
+}
+.Picture img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 769px) {
+  .Main {
+    margin-left: 75px;
+  }
   .Navbar img {
     width: 25px;
   }
@@ -284,34 +319,5 @@ a {
   }
 }
 
-@media (hover: none) {
-  .Home .row-1 .row-item-1:hover { 
-    
-  }
 
-  .Home .row-1 .row-item-2:hover { 
-    
-  }
-
-  .Home .row-2 .row-item-2:hover {
-    
-  }
-
-  .Home .row-3 .row-item-2:hover { 
-    
-  }
-
-  .Home .row-3 .row-item-4:hover { 
-    
-  }
-
-  .Home .row-4 .row-item-1:hover { 
-    
-  }
-
-  .Home .row-4 .row-item-3:hover { 
-    
-  }
-
-}
 
