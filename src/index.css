@@ -299,6 +299,20 @@ p {
   width: 40%;
 }
 
+.Contact .details {
+  display: flex;
+  border-bottom: var(--app-border);
+}
+
+.Contact .details p {
+  padding: 25px;
+  font-weight: 800;
+}
+
+.Contact .phone {
+  border-left: var(--app-border);
+}
+
 @media only screen and (max-width: 769px) {
   .Main {
     margin-left: 75px;
@@ -396,6 +410,14 @@ p {
   .split-section .left,
   .split-section .right {
     width: 100%;
+    border-left: none;
+  }
+
+  .Contact .details {
+    flex-direction: column;
+  }
+  .Contact .phone {
+    border-top: var(--app-border);
     border-left: none;
   }
 }

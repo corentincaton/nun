@@ -7,7 +7,7 @@ import secondImage from "../Assets/Images/05.jpg";
 
 function PopUps() {
 
-    const [header, setHeader] = useState({text: "Pop Ups", color: "#40312E"});
+    const [header, setHeader] = useState({text: "Pop Ups", color: "#7C3930"});
     const [text, setText] = useState("Nun crée des expériences culinaires uniques et temporaires. Une cuisine associée à des producteurs locaux et durables de la plus haute qualité pour offrir une expérience exceptionnelle à vos hôtes pendant des évènements (vernissage, soirée d’entreprise, etc).");
     const [priceListHeader, setPriceListHeader] = useState("Tarifs");
     const [priceList, setPriceList] = useState([{name: "Cocktail dinatoire", price: 10, id:1}, {name: "Plateau repas", price:14, id:2}, {name: "Buffet froid", price: 18, id:3}, {name: "Buffet froid", price: 20, id:4}]);

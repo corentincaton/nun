@@ -6,6 +6,7 @@ import Consulting from './Components/Consulting';
 import PopUps from './Components/PopUps';
 import Menu from './Components/Menu';
 import Partners from './Components/Partners';
+import Contact from './Components/Contact';
 import {BrowserRouter as  Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
            <Route path="/pop-ups" element={<PopUps />} />
            <Route path="/menu" element={<Menu />} />
            <Route path="/partners" element={<Partners />} />
+           <Route path="/contact" element={<Contact />} />
         </Routes>
         </div>
       </div>

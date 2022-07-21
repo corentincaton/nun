@@ -5,7 +5,7 @@ import image from "../Assets/Images/06.jpg";
 
 function Menu() {
 
-    const [header, setHeader] = useState({text: "Le menu du mois", color: "#40312E"});
+    const [header, setHeader] = useState({text: "Le menu du mois", color: "#FC7065"});
     const [text, setText] = useState("Les huîtres aux poivrons");
     const [youtubeLink, setYoutubeLink] = useState("https://www.youtube.com/embed/ereeLT4eD0U");
     const [ingredientListHeader, setIngredientListHeader] = useState("Ingrédients");

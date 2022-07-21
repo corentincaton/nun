@@ -7,7 +7,7 @@ import secondImage from "../Assets/Images/02.jpg";
 
 function PrivateChef() {
 
-    const [header, setHeader] = useState({text: "Chef privé", color: "#40312E"});
+    const [header, setHeader] = useState({text: "Chef privé", color: "#ECA88A"});
     const [text, setText] = useState("Nun at home. Un chef à la maison pour vivre une expérience à domicile avec vos convives.");
 
     return (  
