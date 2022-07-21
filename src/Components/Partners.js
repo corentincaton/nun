@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./Header";
-import Paragraph from "./Paragraph";
+import TextContainer from "./TextContainer";
 import ImageContainer from "./ImageContainer";
 import image from "../Assets/Images/08.jpg";
 
@@ -12,7 +12,7 @@ function Partners() {
     return (  
         <div className="Partners">
             <Header header={header} />
-            <Paragraph text={text} />
+            <TextContainer text={text} />
             <ImageContainer srcImage={image} />
         </div>
     );

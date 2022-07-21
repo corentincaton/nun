@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./Header";
-import Paragraph from "./Paragraph";
+import TextContainer from "./TextContainer";
 import ImageContainer from "./ImageContainer";
 import firstImage from "../Assets/Images/01.jpg";
 import secondImage from "../Assets/Images/02.jpg";
@@ -13,7 +13,7 @@ function PrivateChef() {
     return (  
         <div className="PrivateChef">
             <Header header={header} />
-            <Paragraph text={text} />
+            <TextContainer text={text} />
             <ImageContainer srcImage={firstImage} />
             <ImageContainer srcImage={secondImage} />
         </div>

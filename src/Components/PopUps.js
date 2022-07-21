@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./Header";
-import Paragraph from "./Paragraph";
+import TextContainer from "./TextContainer";
 import ImageContainer from "./ImageContainer";
 import firstImage from "../Assets/Images/04.jpg";
 import secondImage from "../Assets/Images/05.jpg";
@@ -16,7 +16,7 @@ function PopUps() {
     return (  
         <div className="PopUps">
             <Header header={header} />
-            <Paragraph text={text} />
+            <TextContainer text={text} />
             <div className="split-section">
                 <div className="left">
                     <ImageContainer srcImage={firstImage} />

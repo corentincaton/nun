@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./Header";
-import Paragraph from "./Paragraph";
+import TextContainer from "./TextContainer";
 
 function Contact() {
 
@@ -10,7 +10,7 @@ function Contact() {
     return (  
         <div className="Contact">
             <Header header={header} />
-            <Paragraph text={text} />
+            <TextContainer text={text} />
             <div className="details">
                 <p className="email">anthony.foret@gmail.com</p>
                 <p className="phone">06.44.02.34.97</p>

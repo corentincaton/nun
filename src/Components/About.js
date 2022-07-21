@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./Header";
 import ImageContainer from "./ImageContainer";
 import image from "../Assets/Images/07.jpg";
-import Paragraph from "./Paragraph";
+import TextContainer from "./TextContainer";
 
 function About() {
 
@@ -18,7 +18,7 @@ function About() {
             </div>
             <div className="split-section">
                 <div className="left">
-                    <Paragraph text={text} />
+                    <TextContainer text={text} />
                 </div>
                 <div className="right">
                     <ImageContainer srcImage={image} />
