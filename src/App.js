@@ -1,7 +1,8 @@
-import Home from './Home';
-import Navbar from './Navbar';
-import About from './About';
-import PrivateChef from './PrivateChef';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+import About from './Components/About';
+import PrivateChef from './Components/PrivateChef';
+import Consulting from './Components/Consulting';
 import {BrowserRouter as  Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
            <Route path="/" element={<Home />} />
            <Route path="/about" element={<About />} />
            <Route path="/private-chef" element={<PrivateChef />} />
+           <Route path="/consulting" element={<Consulting />} />
         </Routes>
         </div>
       </div>

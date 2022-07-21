@@ -22,6 +22,7 @@ code {
 .Main {
   margin-left: 80px;
   border-left: var(--app-border);
+  min-height: 100vh;
 }
 .Main>*:not(.Home) {
   padding-bottom: 40px;
@@ -192,11 +193,11 @@ a {
   font-size: 20px;
 }
 
-.Picture {
+.ImageContainer {
   font-size: 0px;
   border-bottom: var(--app-border);
 }
-.Picture img {
+.ImageContainer img {
   width: 100%;
 }
 
