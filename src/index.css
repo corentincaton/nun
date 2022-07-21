@@ -203,6 +203,7 @@ a {
 .Main .PopUps {
   padding-bottom: 0px;
 }
+.Menu .split-section,
 .PopUps .split-section {
   display: flex;
 }
@@ -220,7 +221,6 @@ a {
 .PopUps td {
   padding-bottom: 5px;
 }
-
 .PopUps h3 {
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -228,6 +228,9 @@ a {
 .PopUps .right {
   border-left: var(--app-border);
   padding-bottom: 40px;
+}
+.Menu .ingredient-list {
+  padding: 25px;
 }
 @media only screen and (max-width: 769px) {
   .Main {
