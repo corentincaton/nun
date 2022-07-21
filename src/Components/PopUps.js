@@ -5,8 +5,6 @@ import ImageContainer from "./ImageContainer";
 import firstImage from "../Assets/Images/04.jpg";
 import secondImage from "../Assets/Images/05.jpg";
 
-
-
 function PopUps() {
 
     const [header, setHeader] = useState({text: "Pop Ups", color: "#40312E"});
@@ -22,16 +20,16 @@ function PopUps() {
             <div className="split-section">
                 <div className="left">
                     <ImageContainer srcImage={firstImage} />
-                    <div className="price-list">
-                    <h3>{priceListHeader}</h3>
-                    <table><tbody>
-                    {priceList.map((item) => (
-                        <tr key={item.id}>
-                            <td>{item.name}</td>
-                            <td>{item.price}{priceLabel}</td>
-                        </tr>
-                    ))}
-                    </tbody></table>
+                    <div className="info">
+                        <h4>{priceListHeader}</h4>
+                        <table><tbody>
+                        {priceList.map((item) => (
+                            <tr key={item.id}>
+                                <td>{item.name}</td>
+                                <td>{item.price}{priceLabel}</td>
+                            </tr>
+                        ))}
+                        </tbody></table>
                     </div>
                 </div>
                 <div className="right"><ImageContainer srcImage={secondImage} /></div>

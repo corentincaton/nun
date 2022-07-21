@@ -28,6 +28,46 @@ code {
   padding-bottom: 40px;
 }
 
+h1 {
+  font-size: 20px;
+  font-weight: 800;
+  display: inline-block;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+
+h3 {
+  text-transform: uppercase;
+  padding: 40px 25px 25px;
+  font-size: 30px;
+  font-weight: 400;
+  border-bottom: var(--app-border);
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+table {
+  width: 100%;
+  font-size: 20px;
+}
+
+.td:first-child {
+  padding-right: 20px;
+}
+
+td {
+  padding-bottom: 5px;
+}
+
+img {
+  width: 100%;
+}
+
 p,
 a,
 h1,
@@ -39,9 +79,35 @@ button {
   margin: 0px;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
 a {
   color: white;
   text-decoration: none;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: var(--app-border);
 }
 
 .Navbar {
@@ -64,12 +130,6 @@ a {
 
 .Navbar p {
   display: inline-block;
-  padding-top: 40px;
-}
-
-.Navbar .description {
-  font-weight: bolder;
-  text-transform: uppercase;
 }
 
 .Home {
@@ -107,12 +167,11 @@ a {
 
 .Home .row-item {
   cursor: pointer;
-  font-size: 20px;
   display: flex;
   align-items: flex-end;
 }
 
-.Home .row-item-container {
+.Home p {
   padding: 15px;
 }
 
@@ -179,59 +238,55 @@ a {
   padding: 100px 25px 25px;
   border-bottom: var(--app-border);
 }
-.Header h2 {
-  font-weight: 400;
-  font-size: 40px;
-}
 
 .Paragraph {
   padding: 80px 25px 25px;
   border-bottom: var(--app-border);
-}
-.Paragraph p {
-  font-weight: 400;
-  font-size: 20px;
 }
 
 .ImageContainer {
   font-size: 0px;
   border-bottom: var(--app-border);
 }
-.ImageContainer img {
-  width: 100%;
-}
-.Main .PopUps {
+
+.Main .PopUps,
+.Main .Menu {
   padding-bottom: 0px;
 }
-.Menu .split-section,
-.PopUps .split-section {
+
+.split-section {
   display: flex;
 }
-.PopUps .price-list {
+
+.split-section .left {
+  line-height: 1.5;
+}
+
+.split-section .info {
   padding: 25px;
   border-bottom: var(--app-border);
 }
-.PopUps table {
-  width: 100%;
-  font-size: 20px;
-}
-.PopUps td:first-child {
-  padding-right: 20px;
-}
-.PopUps td {
-  padding-bottom: 5px;
-}
-.PopUps h3 {
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
-.PopUps .right {
+
+.split-section .right {
   border-left: var(--app-border);
   padding-bottom: 40px;
 }
-.Menu .ingredient-list {
-  padding: 25px;
+
+.PopUps .left {
+  width: 55%;
 }
+
+.PopUps .right {
+  width: 45%;
+}
+
+.Menu .left {
+  width: 40%;
+}
+.Menu .right {
+  width: 60%;
+}
+
 @media only screen and (max-width: 769px) {
   .Main {
     margin-left: 75px;
@@ -320,10 +375,13 @@ a {
     margin-bottom: 0px;
   }
 
-  .PopUps .split-section {
+  .split-section {
     flex-direction: column;
   }
-  .PopUps .right {
+
+  .split-section .left,
+  .split-section .right {
+    width: 100%;
     border-left: none;
   }
 }

@@ -5,8 +5,6 @@ import ImageContainer from "./ImageContainer";
 import firstImage from "../Assets/Images/01.jpg";
 import secondImage from "../Assets/Images/02.jpg";
 
-
-
 function PrivateChef() {
 
     const [header, setHeader] = useState({text: "Chef Privé", color: "#40312E"});
