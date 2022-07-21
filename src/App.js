@@ -5,6 +5,7 @@ import PrivateChef from './Components/PrivateChef';
 import Consulting from './Components/Consulting';
 import PopUps from './Components/PopUps';
 import Menu from './Components/Menu';
+import Partners from './Components/Partners';
 import {BrowserRouter as  Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
            <Route path="/consulting" element={<Consulting />} />
            <Route path="/pop-ups" element={<PopUps />} />
            <Route path="/menu" element={<Menu />} />
+           <Route path="/partners" element={<Partners />} />
         </Routes>
         </div>
       </div>
