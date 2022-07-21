@@ -200,7 +200,35 @@ a {
 .ImageContainer img {
   width: 100%;
 }
+.Main .PopUps {
+  padding-bottom: 0px;
+}
+.PopUps .split-section {
+  display: flex;
+}
+.PopUps .price-list {
+  padding: 25px;
+  border-bottom: var(--app-border);
+}
+.PopUps table {
+  width: 100%;
+  font-size: 20px;
+}
+.PopUps td:first-child {
+  padding-right: 20px;
+}
+.PopUps td {
+  padding-bottom: 5px;
+}
 
+.PopUps h3 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.PopUps .right {
+  border-left: var(--app-border);
+  padding-bottom: 40px;
+}
 @media only screen and (max-width: 769px) {
   .Main {
     margin-left: 75px;
@@ -287,6 +315,13 @@ a {
     min-height: 115px;
     border-right: 30px solid #C8A680;
     margin-bottom: 0px;
+  }
+
+  .PopUps .split-section {
+    flex-direction: column;
+  }
+  .PopUps .right {
+    border-left: none;
   }
 }
 
