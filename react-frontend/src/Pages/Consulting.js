@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Header from "./Header";
-import TextContainer from "./TextContainer";
-import ImageContainer from "./ImageContainer";
+import Header from "../Components/Header";
+import TextContainer from "../Components/TextContainer";
+import ImageContainer from "../Components/ImageContainer";
 import image from "../Assets/Images/03.jpg";
 
 function Consulting() {

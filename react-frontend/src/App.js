@@ -1,12 +1,12 @@
-import Home from './Components/Home';
 import Navbar from './Components/Navbar';
-import About from './Components/About';
-import PrivateChef from './Components/PrivateChef';
-import Consulting from './Components/Consulting';
-import PopUps from './Components/PopUps';
-import Menu from './Components/Menu';
-import Partners from './Components/Partners';
-import Contact from './Components/Contact';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import PrivateChef from './Pages/PrivateChef';
+import Consulting from './Pages/Consulting';
+import PopUps from './Pages/PopUps';
+import Menu from './Pages/Menu';
+import Partners from './Pages/Partners';
+import Contact from './Pages/Contact';
 import {BrowserRouter as  Router, Routes, Route} from 'react-router-dom';
 
 function App() {

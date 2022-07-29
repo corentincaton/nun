@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Header from "./Header";
-import ImageContainer from "./ImageContainer";
+import Header from "../Components/Header";
+import ImageContainer from "../Components/ImageContainer";
+import TextContainer from "../Components/TextContainer";
 import image from "../Assets/Images/07.jpg";
-import TextContainer from "./TextContainer";
 
 function About() {
 

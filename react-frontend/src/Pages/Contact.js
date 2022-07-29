@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Header from "./Header";
-import TextContainer from "./TextContainer";
+import Header from "../Components/Header";
+import TextContainer from "../Components/TextContainer";
 
 function Contact() {
 

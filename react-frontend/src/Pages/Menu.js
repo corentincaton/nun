@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Header from "./Header";
-import ImageContainer from "./ImageContainer";
+import Header from "../Components/Header";
+import ImageContainer from "../Components/ImageContainer";
 import image from "../Assets/Images/06.jpg";
 
 function Menu() {

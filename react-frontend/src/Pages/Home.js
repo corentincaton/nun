@@ -1,4 +1,4 @@
-import ItemsRow from "./ItemsRow";
+import ItemsRow from "../Components/ItemsRow";
 
 function Home() {
 
