@@ -34,10 +34,11 @@
       "type": "string",
       "required": true
     },
-    "Body": {
-      "pluginOptions": {},
-      "type": "richtext",
-      "required": true
+    "IngredientHeader": {
+      "type": "string"
+    },
+    "IngredientList": {
+      "type": "text"
     }
   }
 }

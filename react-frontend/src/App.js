@@ -9,6 +9,7 @@ import PopUps from './Pages/PopUps';
 import Menu from './Pages/Menu';
 import Partners from './Pages/Partners';
 import Contact from './Pages/Contact';
+import HookTest from './Pages/HookTest';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
            <Route path="/menu" element={<Menu />} />
            <Route path="/partners" element={<Partners />} />
            <Route path="/contact" element={<Contact />} />
+           <Route path="/hook-test" element={<HookTest />} />
         </Routes>
         </div>
       </div>
