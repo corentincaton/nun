@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Navbar() {
     return (  
         <div className="Navbar">
-            <p>Newsletter</p>
+            <a id="newsletter" href="http://eepurl.com/ieX6wX">Newsletter</a>
             <h1>Local Kitchen</h1>
             <Link to="/"><img src={logo} alt="" /></Link>
         </div>
