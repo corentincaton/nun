@@ -30,6 +30,7 @@ body {
   font-family: 'Neufile Grotesk', -apple-system, BlinkMacSystemFont,'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  white-space: pre-wrap;
 }
 
 .App {
@@ -262,7 +263,7 @@ button {
 }
 
 .TextContainer {
-  padding: 80px 25px 25px;
+  padding: 80px 25px 40px;
   border-bottom: var(--app-border);
 }
 

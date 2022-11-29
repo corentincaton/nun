@@ -3,7 +3,7 @@ import ItemsRow from "./ItemsRow";
 function Home() {
 
     let firstRowItems = [
-        {name: "Chef privé", link: "private-chef", id:1},
+        {name: "Chef à domicile", link: "private-chef", id:1},
         {name: "Consulting", link: "consulting", id:2},
         {name: "", link: "", width: "", id:3}
     ];
