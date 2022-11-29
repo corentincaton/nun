@@ -19,7 +19,8 @@ function PopUps() {
             <Header header={header} />
             <ParagraphWithBoldContainer textA={texts.textA} textB={texts.textB} textC={texts.textC} />
             <div className="split-section">
-                <div className="left">
+                <div className="left"><ImageContainer srcImage={secondImage} /></div>
+                <div className="right">
                     <ImageContainer srcImage={firstImage} />
                     <div className="info">
                         <h4>{priceListHeader}</h4>
@@ -33,7 +34,6 @@ function PopUps() {
                         </tbody></table>
                     </div>
                 </div>
-                <div className="right"><ImageContainer srcImage={secondImage} /></div>
             </div>
         </div>
     );

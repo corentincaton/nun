@@ -9,6 +9,15 @@
 
 @font-face {
   font-family: 'Neufile Grotesk';
+  src: url('./Fonts/NeufileGrotesk-RegularItalic.woff2') format('woff2'),
+      url('./Fonts/NeufileGrotesk-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neufile Grotesk';
   src: url('./Fonts/NeufileGrotesk-ExtraBold.woff2') format('woff2'),
       url('./Fonts/NeufileGrotesk-ExtraBold.woff') format('woff');
   font-weight: bold;
@@ -77,6 +86,11 @@ h4 {
   padding-bottom: 20px;
   font-size: 20px;
   font-weight: 800;
+}
+
+.quote {
+  font-size: 30px;
+  line-height: 1;
 }
 
 a {
@@ -273,7 +287,6 @@ button {
 }
 
 .Main .PopUps,
-.Main .Menu,
 .Main .About {
   padding-bottom: 0px;
 }
@@ -284,6 +297,7 @@ button {
 
 .split-section .left {
   line-height: 1.5;
+  padding-bottom: 40px;
 }
 
 .split-section .info {
@@ -293,7 +307,6 @@ button {
 
 .split-section .right {
   border-left: var(--app-border);
-  padding-bottom: 40px;
 }
 
 .PopUps .left {
@@ -432,6 +445,14 @@ button {
   .split-section .right {
     width: 100%;
     border-left: none;
+  }
+
+  .split-section .left {
+    padding-bottom: 0px;
+  }
+
+  .split-section .right {
+    padding-bottom: 40px;
   }
 
   .Contact .details {

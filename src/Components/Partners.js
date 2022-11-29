@@ -7,7 +7,7 @@ import image from "../Assets/Images/08.jpg";
 function Partners() {
 
     const [header, setHeader] = useState({text: "Les alliés", color: "#F5A29E"});
-    const [text, setText] = useState("Artisans, paysans et éleveurs, ils contribuent à la qualité de l’expérience en fournissant des produits locaux de qualité…");
+    const [text, setText] = useState("Fiers de notre culture, et soucieux l’origine de nos produits, il nous est cher d’associer des producteurs locaux à notre savoir-faire. Nun s’engage à travailler des produits locaux et frais afin de vous offrir la meilleure expérience gustative.");
 
     return (  
         <div className="Partners">
