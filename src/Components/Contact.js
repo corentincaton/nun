@@ -5,7 +5,7 @@ import TextContainer from "./TextContainer";
 function Contact() {
 
     const [header, setHeader] = useState({text: "Contact", color: "#C8A680"});
-    const [text, setText] = useState("Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.");
+    const [text, setText] = useState("Contactez Anthony pour obtenir plus d'informations sur ses prestations.");
 
     return (  
         <div className="Contact">
